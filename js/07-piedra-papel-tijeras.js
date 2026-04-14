@@ -66,3 +66,12 @@ console.log(opcionCompuatdora);
 console.log('Piedr, papel o tijera');
 console.log('tu eleccion es: ' + opcionJugador);
 console.log('La compu eligio: ' + opcionComputadora);
+console.log('------------------------------');
+
+//5. Determinarl al ganador apartir de las condicionales 
+
+let resultado;
+if (opcionJugador === opcionComputadora) {
+  resultado = 'Empate ambos eligieron '
+
+}
