@@ -1,0 +1,41 @@
+/* 
+
+Arreglos (arrays)
+
+Un arreglo es una coleccion o lista de datos es decir una lista de elementos.
+
+en JS los rragelos se definen utilizando los corchetes [] y los elementos internos se separan por comas ",".
+
+Pueden contener el mismo tipo de datos o diferentes tipos, incluso pueden tener arreglos animados.
+
+*/
+
+let frutas = ["Durazno, sandia, melon, MANZANA, pera"];
+let calificaciones = [10, 8, 5, 2];
+let misDatos = ["Diana", 21, true]
+
+console.log(frutas);
+console.log(frutas.lenght);
+console.log(frutas[3])
+
+console.log("Calificaciones de diana" + calificaciones[3])
+
+console.log("Diana es muy dormilona " + misDatos[1] + " años ");
+
+let coordenadas = [[1, 2, 3], [4, 5, 6,], [7, 8, 9]];
+
+console.log(coordenadas);
+console.log(coordenadas[2])
+console.log(coordenadas[2][2])
+
+/* 
+
+Metodos de los arreglos 
+
+son un metodo de la funcion establecida que nos ayuda a trabajar con arreglos y sus datos.
+
+push() 👉 agrega uno o mas elementos al final del arreglo
+pop() 👉 Elimina el ultimo elemento del arreglo y lo devuelve 
+shift() 👉 Elimina el primer elemento del arreglo y lo dvuelve 
+ushift() 👉 agrega uno o mas elementos al inicio del arreglo 
+indexOF () 👉 Devuleve el indice del primer elemento que coincida con el valor especificado o regresa-1 si no encuentra nada */
