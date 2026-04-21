@@ -38,4 +38,42 @@ push() 👉 agrega uno o mas elementos al final del arreglo
 pop() 👉 Elimina el ultimo elemento del arreglo y lo devuelve 
 shift() 👉 Elimina el primer elemento del arreglo y lo dvuelve 
 ushift() 👉 agrega uno o mas elementos al inicio del arreglo 
-indexOF () 👉 Devuleve el indice del primer elemento que coincida con el valor especificado o regresa-1 si no encuentra nada */
+indexOF () 👉 Devuleve el indice del primer elemento que coincida con el valor especificado o regresa-1 si no encuentra nada.
+
+*/
+
+let peliculas = ["Guerra mundial z", "rec 1", "Rapunzel"];
+console.log(peliculas);
+peliculas.push("Frozen", "Rec 2", "El conjuro");
+console.log(peliculas);
+
+let ultimaPelicula = peliculas.pop();
+console.log(peliculas);
+console.log("La ultima pelicula que vi" + ultimaPelicula);
+let primerPelicula = peliculas.shift();
+
+console.log(peliculas);
+console.log("Mi primer movie que vi" + primerPelicula);
+
+peliculas.unshift("Rec 2", "a todos los chicos de los que me enamore", "rapunzel");
+
+console.log(peliculas)
+
+console.log(peliculas.indexOf("Rapunzel"))
+
+/* 
+
+Interacion de arreglos
+
+El acceso a los datos atraves d eun blucle o ciclo
+
+*/
+
+let antojitos = ["chalupas", "crepas", "sushi"]
+
+antojitos.push("michelada", "crepa", "memelita");
+antojitos.push("paleta", "gomita", "coca")
+
+for (i = 0; i < antojitos.lenght; i++) {
+  console.log("Se me antojo mucho" + antojitos[i] + "🤤")
+}
