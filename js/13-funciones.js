@@ -107,3 +107,73 @@ const sumar = function (num1, num2) {
 }
 
 sumar(5, 10);
+
+/* 
+
+parametros por defecto: 
+
+
+
+
+Sintaxis:
+function nombreFuncion( parm1 = valorDefault ) { 
+//Codigo que se ejecuta o cuerpo de la funcion. ...
+}
+
+Llamada: 
+
+nombreFuncion(); // usara los valores por defecto.
+nombreFuncion(arg1); Usara el valor del argumento 
+
+*/
+
+const multiplicar = function (num1 = 1, num2 = 2) {
+  let resultado = num1 * num2;
+  console.log(´El resultado multiplicar ${ num1 } por ${ num2 } es: ${ resultado }´);
+}
+
+multiplicar()
+multiplicar(5, 3);
+
+/* 
+
+Valor de retorno (return):
+
+Las funciones pueden "devolver" o retornar un valor. Para esto se utiliza la palabra "return"
+
+Sintaxis: 
+
+function nombreFuncion() {
+ // Cuerpa de la funcion.
+ ...
+ ...
+ Return valor;
+}
+ 
+Llamada: 
+
+const nombreContante = nombreFuncion();
+
+*/
+
+function despedida(nombre = 'Dianita') {
+  return ´${ nombre } estas despedido!´;
+}
+
+const mensajito = despedido();
+
+console.log(mensajito);
+
+/* 
+
+Retorno implicito:
+
+
+
+sintaxis:
+
+const nombreConstante = () => valor;
+
+*/
+
+const restar = (num1, num2) => num1 - num2
